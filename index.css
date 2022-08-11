@@ -1,0 +1,174 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "josefin sens", sans-serif;
+}
+
+/* NOW ITS MAGIC TIME.........  */
+body
+{
+  background-image: linear-gradient(#000000c7, #000000c8),
+  url("bgg.webp");
+
+  /* anddddddddd bhooommmmm */
+}
+
+header
+{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav
+{
+  width: 100%;
+  height: 15vh;
+  background: #00000033;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo
+{
+  width: 400px;
+  cursor: pointer;
+}
+
+nav .menu
+{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a 
+{
+  width: 25%;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav .menu a:first-child{
+  color: #00b894;
+}
+
+
+main 
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section h3
+{
+  margin-top: 290px;
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+  color: white;
+}
+
+section h1
+{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  color: rgb(177,221,64);
+  text-transform: uppercase;
+}
+
+section pre
+{
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 1px black;
+  color: rgb(221,32,104);
+}
+
+section a 
+{
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+
+section .btnone
+{
+  background: #dc9e5c;
+  color: white;
+}
+
+.btone:hover
+{
+  background: white;
+  color: black;
+}
+
+section .btntwo
+{
+  background: white;
+  color: black;
+}
+
+.btone:hover
+{
+  background: #5cdc78;
+  color: #fff;
+}
+
+.change_content::after
+{
+  content: "";
+  animation: change 10s infinite linear;
+  color: white;
+}
+
+@keyframes change 
+{
+  0%
+  {
+    content: "U.P";
+  }
+  20%
+  {
+    content: "Agra";
+  }
+  35%
+  {
+    content: "Jaipur";
+  }
+  60%
+  {
+    content: "Kerala";
+  }
+  80%
+  {
+    content: "Delhi";
+  }
+  100%
+  {
+    content: "Bombay";
+  }
+}
